@@ -24,6 +24,7 @@
     "eslint": "^8.3.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-webpack-plugin": "^3.1.1",
+    "express": "^4.18.2",
     "file-loader": "^6.2.0",
     "fs-extra": "^10.0.0",
     "html-webpack-plugin": "^5.5.0",
@@ -56,12 +57,15 @@
     "webpack": "^5.64.4",
     "webpack-dev-server": "^4.6.0",
     "webpack-manifest-plugin": "^4.0.2",
+    "webpack-node-externals": "^3.0.0",
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "start:server": "node dist/server.js",
+    "build:server": "node scripts/build.server.js"
   },
   "eslintConfig": {
     "extends": [
